@@ -50,7 +50,7 @@ vi setup.sh
 
 Then, run the ```setup.sh```
 ```
-bash setup.sh
+. setup.sh
 ```
 
 # Step 6: Connect to VM using Remote Desktop Client
