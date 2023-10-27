@@ -1,4 +1,5 @@
 # ROS-Gazebo-AppleSilicon
+## This repo is tested for ROS-Noetic on Ubuntu 20.04 only.
 I have struggled several weeks to <ins>run Gazebo simulations with ROS-Noetic on my M1 MacBook Pro</ins>, and here is the ***ultimate solution.***  
 To the best of my knowledge and experience, <ins>**Connecting Remote Desktop to VMware Ubuntu** was the only successful option</ins>.  
 I've also tried other options including:   
@@ -10,6 +11,7 @@ But after all, these <ins>***DID NOT***</ins> successfully run Gazebo and other 
 
 # Step 1: Install VMware Fusion and RDP client
 [Download Remote Desktop Client](https://apps.apple.com/kr/app/microsoft-remote-desktop/id1295203466?l=en-GB&mt=12)  
+
 [Download VMware Fusion Player](https://www.vmware.com/products/fusion/fusion-evaluation.html)  
 You may need to sign up and register to get the free personal-use license.
 
@@ -51,7 +53,7 @@ Then, run the ```setup.sh```
 bash setup.sh
 ```
 
-# Step 6: Connect to Remote Desktop
+# Step 6: Connect to VM using Remote Desktop Client
 While your VM Ubuntu is running, you can connect to ```<VM_IP>:3389``` and use Full-GUI experience with ROS and Gazebo.  
 ```<VM_IP>``` is the local IP address of your VM, and can be obtained through
 ```
