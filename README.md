@@ -1,8 +1,9 @@
 # ROS-SLAM-AppleSilicon
 ## This repo is tested for ROS-Noetic on Ubuntu 20.04 only.
 
-![ezgif-5-24d36ba1b7](https://github.com/hyeonbeenlee/ROS-SLAM-AppleSilicon/assets/78078652/877d4774-f2b2-45ef-ae69-ed8482bd5a10)
-
+![demo1](https://github.com/hyeonbeenlee/ROS-SLAM-AppleSilicon/assets/78078652/9a801436-3bcb-4ab1-8fe8-baae9dfca665)
+  
+![demo2](https://github.com/hyeonbeenlee/ROS-SLAM-AppleSilicon/assets/78078652/91c02fa3-93a8-4357-addb-dd8cb595b000)
 
 I have struggled several weeks to <ins>run Turtlebot3 SLAM simulations with ROS-Noetic on my M1 MacBook Pro</ins>, and here is the ***ultimate solution.***  
 To the best of my knowledge and experience, <ins>**connecting Remote Desktop to VMware-running Ubuntu** was the only fully-successful option.</ins>  
