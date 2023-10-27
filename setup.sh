@@ -1,27 +1,33 @@
 # HOW TO USE:
 # After clean install of Ubuntu 20.04 Server on VMWare Fusion running on MacOSX,
 # cd && mkdir Git && cd Git
-# https://github.com/hyeonbeenlee/AppleSilicon-ROS-Gazebo.git
+# git clone https://github.com/hyeonbeenlee/AppleSilicon-ROS-Gazebo.git
 # cd AppleSilicon-ROS-Gazebo && bash setup.sh
 # sudo reboot
 # Then, connect to Remote Desktop to {VM's internal IP}:3389
 # {VM's internal IP} can be checked by running 'ifconfig'
 
 # Authorize
-# Modify "hyeonbeen" to your username if needed.
-# Modify "hyeonbeen" to your username if needed.
+# Modify "hyeonbeen" to your username
+# Modify "hyeonbeen" to your username
 sudo usermod -aG sudo hyeonbeen
 sudo -- sh -c "echo "hyeonbeen" | sudo -S chmod 777 /home"
 sudo -- sh -c "echo '%sudo ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers"
-# Modify "hyeonbeen" to your username if needed.
-# Modify "hyeonbeen" to your username if needed.
+# Modify "hyeonbeen" to your username
+# Modify "hyeonbeen" to your username
+
 
 # Install apps
+# Modify apt mirrors if necessary
+# Modify apt mirrors if necessary
 sudo sed -i 's/archive.ubuntu.com/mirror.kakao.com/g' /etc/apt/sources.list
 sudo sed -i 's/security.ubuntu.com/mirror.kakao.com/g' /etc/apt/sources.list
 sudo sed -i 's/ports.ubuntu.com/ftp.lanet.kr/g' /etc/apt/sources.list
+# Modify apt mirrors if necessary
+# Modify apt mirrors if necessary
 sudo apt-get update
 sudo DEBIAN_FRONTEND=noninteractive apt-get install vim git wget curl tmux net-tools openssh-server x11-apps open-vm-tools open-vm-tools-desktop -y
+
 
 # Setup SSH
 sudo ssh-keygen -A
@@ -29,6 +35,7 @@ mkdir /var/run/sshd
 sudo sed -i 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/' /etc/ssh/sshd_config
 sudo sed -i 's/#PasswordAuthentication yes/PasswordAuthentication yes/' /etc/ssh/sshd_config
 sudo service sshd restart
+
 
 # Install XRDP
 sudo DEBIAN_FRONTEND=noninteractive apt-get install xrdp xfce4 xfce4-session terminator -y
@@ -48,6 +55,7 @@ sudo service xrdp restart
 # Install firefox
 sudo DEBIAN_FRONTEND=noninteractive apt-get install firefox -y
 
+
 # Install VSCode
 sudo DEBIAN_FRONTEND=noninteractive apt-get install wget gpg -y
 wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
@@ -57,6 +65,7 @@ sudo rm -f packages.microsoft.gpg
 sudo DEBIAN_FRONTEND=noninteractive apt install apt-transport-https -y
 sudo apt update
 sudo DEBIAN_FRONTEND=noninteractive apt install code -y
+
 
 # ROS-Noetic installation
 sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
@@ -70,6 +79,7 @@ sudo apt install python3-rosdep -y
 sudo rosdep init
 rosdep update
 echo "alias cm="catkin_make"" >> ~/.bashrc
+source ~/.bashrc
 # ROS Turtlebot3
 sudo apt-get install ros-noetic-joy ros-noetic-teleop-twist-joy -y
 mkdir -p ~/catkin_ws/src
@@ -81,6 +91,8 @@ git clone -b noetic-devel https://github.com/ROBOTIS-GIT/turtlebot3.git
 cd ~/catkin_ws && catkin_make
 echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc
 echo "export TURTLEBOT3_MODEL=waffle_pi" >> ~/.bashrc
+source ~/.bashrc
+
 
 # Install miniconda
 # mkdir -p ~/miniconda3
@@ -89,5 +101,7 @@ echo "export TURTLEBOT3_MODEL=waffle_pi" >> ~/.bashrc
 # rm -rf ~/miniconda3/miniconda.sh
 # ~/miniconda3/bin/conda init bash
 
-# Clean
+
+# Clean and reboot
 sudo apt-get clean && sudo rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+sudo reboot
