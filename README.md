@@ -1,4 +1,4 @@
-# ROS-Gazebo-AppleSilicon
+# ROS-SLAM-AppleSilicon
 ## This repo is tested for ROS-Noetic on Ubuntu 20.04 only.
 
 ![ezgif-5-24d36ba1b7](https://github.com/hyeonbeenlee/ROS-Gazebo-AppleSilicon/assets/78078652/877d4774-f2b2-45ef-ae69-ed8482bd5a10)
