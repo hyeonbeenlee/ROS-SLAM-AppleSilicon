@@ -4,12 +4,12 @@
 ![ezgif-5-24d36ba1b7](https://github.com/hyeonbeenlee/ROS-SLAM-AppleSilicon/assets/78078652/877d4774-f2b2-45ef-ae69-ed8482bd5a10)
 
 
-I have struggled several weeks to <ins>run Gazebo simulations with ROS-Noetic on my M1 MacBook Pro</ins>, and here is the ***ultimate solution.***  
-To the best of my knowledge and experience, <ins>**Connecting Remote Desktop to VMware Ubuntu** was the only fully-successful option.</ins>  
+I have struggled several weeks to <ins>run Turtlebot3 SLAM simulations with ROS-Noetic on my M1 MacBook Pro</ins>, and here is the ***ultimate solution.***  
+To the best of my knowledge and experience, <ins>**connecting Remote Desktop to VMware-running Ubuntu** was the only fully-successful option.</ins>  
 I've also tried other options including:   
 1. Dual-booting to native Asahi-Ubuntu
 2. XQuartz-forwarding to Ubuntu Docker container
-3. RDP-connecting to Ubuntu Docker container
+3. Remote Desktop connecting to Ubuntu Docker container
 
 But after all, these <ins>***DID NOT***</ins> successfully run Gazebo and other required applications.
 
@@ -65,13 +65,24 @@ ifconfig
 ```
 
 # Step 7: Test your VM
-Test Gazebo on your VM by running below codes:  
-```
-gazebo
-```
+Test apps on your VM by running below codes:  
+### Scanning and saving map
+[ROBOTIS Official SLAM Guide](https://emanual.robotis.com/docs/en/platform/turtlebot3/slam_simulation/)
 ```
 roscore
 roslaunch turtlebot3_gazebo turtlebot3_house.launch
+roslaunch turtlebot3_slam turtlebot3_slam.launch slam_methods:=gmapping
+roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
+rosrun map_server map_saver -f ~/map
+```
+
+### Loading scanned map and navigating
+[ROBOTIS Official Navigation Guide](https://emanual.robotis.com/docs/en/platform/turtlebot3/nav_simulation/)
+```
+roscore
+roslaunch turtlebot3_gazebo turtlebot3_house.launch
+roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:=$HOME/map.yaml
+roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
 ```
 
 # Troubleshooting
