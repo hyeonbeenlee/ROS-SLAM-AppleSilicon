@@ -1,5 +1,9 @@
 # ROS-Gazebo-AppleSilicon
 ## This repo is tested for ROS-Noetic on Ubuntu 20.04 only.
+
+![ezgif-5-24d36ba1b7](https://github.com/hyeonbeenlee/ROS-Gazebo-AppleSilicon/assets/78078652/877d4774-f2b2-45ef-ae69-ed8482bd5a10)
+
+
 I have struggled several weeks to <ins>run Gazebo simulations with ROS-Noetic on my M1 MacBook Pro</ins>, and here is the ***ultimate solution.***  
 To the best of my knowledge and experience, <ins>**Connecting Remote Desktop to VMware Ubuntu** was the only fully-successful option.</ins>  
 I've also tried other options including:   
