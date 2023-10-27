@@ -41,7 +41,7 @@ Running the ```setup.sh``` in the VM's Ubuntu terminal will do the following in 
 -  Update the default apt mirrors to faster local(Korean) mirrors
 - Setup SSH and XRDP connections
 - Install Firefox and VSCode
-- Install ROS and Gazebo simulation tools
+- Install ROS and Turtlebot3-Gazebo simulation apps
 - Clean and reboot
 
 Before you run ```setup.sh```, there're <ins>few things to be personalized.</ins>  
