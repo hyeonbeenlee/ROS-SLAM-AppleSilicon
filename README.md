@@ -18,8 +18,8 @@ You may need to sign up and register to get the free personal-use license.
 [Download Ubuntu Server for ARM 20.04 Focal](https://cdimage.ubuntu.com/releases/focal/release/ubuntu-20.04.5-live-server-arm64.iso)  
 [Download Ubuntu Server for ARM 22.04 Jammy](https://cdimage.ubuntu.com/releases/22.04/release/ubuntu-22.04.3-live-server-arm64.iso)
 
-# Step 3: Create virtual machine in VMware Fusion
-Create virtual Ubuntu machines from the downloaded image at Step 2.  
+# Step 3: Create Ubuntu machine in VMware Fusion
+Create virtual Ubuntu machine from the downloaded image at Step 2.  
 <ins>Don't forget to customize your settings</ins> before starting the new virtual machine (disk size, processors, memories, etc.).  
 Just follow the instructions, create your user, and reboot.
 
@@ -44,6 +44,7 @@ vi setup.sh
 ```
 1. **Replace ```hyeonbeen``` to ```<YOUR_USERNAME>```.**
 2. **Replace the Korean apt mirror ```ftp.lanet.kr``` to others, if necessary.**
+3. **Replace the ```noetic``` to ```<YOUR_ROS_VERSION>``` if necessary.**
 
 Then, run the ```setup.sh```
 ```
