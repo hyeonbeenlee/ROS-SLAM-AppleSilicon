@@ -89,6 +89,7 @@ and run:
 sudo systemctl restart xrdp
 sudo service xrdp restart
 ```
+and try reconnecting.
 
 # ENJOY!
 I hope there are no more victims like me...  
