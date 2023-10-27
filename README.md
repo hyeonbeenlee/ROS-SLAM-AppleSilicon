@@ -71,25 +71,13 @@ roslaunch turtlebot3_gazebo turtlebot3_house.launch
 ```
 
 # Troubleshooting
-If below error raises,
-```
-bash: /home/hyeonbeen/catkin_ws/devel/setup.bash: No such file or directory
-```
-Run:
-```
-cd ~/catkin_ws
-catkin_make
-source ~/.bashrc
-```
-
 If you cannot connect using the Remote Desktop,
-Check if you're connecting to the right ```<VM_IP>```  
-and run:
+Check if you're connecting to the right ```<VM_IP>```,  
 ```
 sudo systemctl restart xrdp
 sudo service xrdp restart
 ```
-and try reconnecting.
+and try reconnecting (or rebooting your MacBook).
 
 # ENJOY!
 I hope there are no more victims like me...  
