@@ -32,8 +32,8 @@ Just follow the instructions, create your user, and reboot.
 
 # Step 4: Clone this repo
 ```
-cd && git clone https://github.com/hyeonbeenlee/AppleSilicon-ROS-SLAM.git
-cd AppleSilicon-ROS-SLAM
+cd && git clone https://github.com/hyeonbeenlee/ROS-SLAM-AppleSilicon.git
+cd ROS-SLAM-AppleSilicon
 ```
 
 # Step 5: Run automatic setup
