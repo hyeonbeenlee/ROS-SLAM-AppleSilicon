@@ -71,14 +71,23 @@ roslaunch turtlebot3_gazebo turtlebot3_house.launch
 ```
 
 # Troubleshooting
+If below error raises,
 ```
 bash: /home/hyeonbeen/catkin_ws/devel/setup.bash: No such file or directory
 ```
-If above error raises, run:
+Run:
 ```
 cd ~/catkin_ws
 catkin_make
 source ~/.bashrc
+```
+
+If you cannot connect using the Remote Desktop,
+Check if you're connecting to the right ```<VM_IP>```  
+and run:
+```
+sudo systemctl restart xrdp
+sudo service xrdp restart
 ```
 
 # ENJOY!
