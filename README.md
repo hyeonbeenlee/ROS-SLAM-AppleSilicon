@@ -70,6 +70,17 @@ roscore
 roslaunch turtlebot3_gazebo turtlebot3_house.launch
 ```
 
+# Troubleshooting
+```
+bash: /home/hyeonbeen/catkin_ws/devel/setup.bash: No such file or directory
+```
+If above error raises, run:
+```
+cd ~/catkin_ws
+catkin_make
+source ~/.bashrc
+```
+
 # ENJOY!
 I hope there are no more victims like me...  
 Please make an issue if there're any problems.
