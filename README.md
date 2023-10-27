@@ -1,7 +1,7 @@
 # ROS-SLAM-AppleSilicon
 ## This repo is tested for ROS-Noetic on Ubuntu 20.04 only.
 
-![ezgif-5-24d36ba1b7](https://github.com/hyeonbeenlee/ROS-Gazebo-AppleSilicon/assets/78078652/877d4774-f2b2-45ef-ae69-ed8482bd5a10)
+![ezgif-5-24d36ba1b7](https://github.com/hyeonbeenlee/ROS-SLAM-AppleSilicon/assets/78078652/877d4774-f2b2-45ef-ae69-ed8482bd5a10)
 
 
 I have struggled several weeks to <ins>run Gazebo simulations with ROS-Noetic on my M1 MacBook Pro</ins>, and here is the ***ultimate solution.***  
@@ -31,8 +31,8 @@ Just follow the instructions, create your user, and reboot.
 
 # Step 4: Clone this repo
 ```
-cd && git clone https://github.com/hyeonbeenlee/AppleSilicon-ROS-Gazebo.git
-cd AppleSilicon-ROS-Gazebo
+cd && git clone https://github.com/hyeonbeenlee/AppleSilicon-ROS-SLAM.git
+cd AppleSilicon-ROS-SLAM
 ```
 
 # Step 5: Run automatic setup

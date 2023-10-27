@@ -1,8 +1,8 @@
 # HOW TO USE:
 # After clean install of Ubuntu 20.04 Server on VMWare Fusion running on MacOSX,
 # cd && mkdir Git && cd Git
-# git clone https://github.com/hyeonbeenlee/AppleSilicon-ROS-Gazebo.git
-# cd AppleSilicon-ROS-Gazebo && bash setup.sh
+# git clone https://github.com/hyeonbeenlee/AppleSilicon-ROS-SLAM.git
+# cd AppleSilicon-ROS-SLAM && bash setup.sh
 # sudo reboot
 # Then, connect to Remote Desktop to {VM's internal IP}:3389
 # {VM's internal IP} can be checked by running 'ifconfig'
