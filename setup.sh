@@ -88,7 +88,6 @@ git clone -b noetic-devel https://github.com/ROBOTIS-GIT/turtlebot3_simulations.
 git clone -b noetic-devel https://github.com/ROBOTIS-GIT/DynamixelSDK.git
 git clone -b noetic-devel https://github.com/ROBOTIS-GIT/turtlebot3_msgs.git
 git clone -b noetic-devel https://github.com/ROBOTIS-GIT/turtlebot3.git
-source ~/.bashrc
 cd ~/catkin_ws && catkin_make
 echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc
 echo "export TURTLEBOT3_MODEL=waffle_pi" >> ~/.bashrc
