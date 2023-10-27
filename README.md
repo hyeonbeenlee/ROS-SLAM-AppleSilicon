@@ -1,7 +1,7 @@
 # ROS-Gazebo-AppleSilicon
 ## This repo is tested for ROS-Noetic on Ubuntu 20.04 only.
 I have struggled several weeks to <ins>run Gazebo simulations with ROS-Noetic on my M1 MacBook Pro</ins>, and here is the ***ultimate solution.***  
-To the best of my knowledge and experience, <ins>**Connecting Remote Desktop to VMware Ubuntu** was the only successful option</ins>.  
+To the best of my knowledge and experience, <ins>**Connecting Remote Desktop to VMware Ubuntu** was the only fully-successful option.</ins>  
 I've also tried other options including:   
 1. Dual-booting to native Asahi-Ubuntu
 2. XQuartz-forwarding to Ubuntu Docker container
