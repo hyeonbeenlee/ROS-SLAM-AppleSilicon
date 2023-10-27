@@ -103,5 +103,6 @@ source ~/.bashrc
 
 
 # Clean and reboot
+sudo apt-get update && sudo apt-get upgrade -y
 sudo apt-get clean && sudo rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 sudo reboot
