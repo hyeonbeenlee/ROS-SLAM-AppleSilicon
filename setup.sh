@@ -27,6 +27,7 @@ sudo sed -i 's/ports.ubuntu.com/ftp.lanet.kr/g' /etc/apt/sources.list
 # Modify apt mirrors if necessary
 sudo apt-get update
 sudo DEBIAN_FRONTEND=noninteractive apt-get install vim git wget curl tmux net-tools openssh-server x11-apps open-vm-tools open-vm-tools-desktop -y
+sudo apt-get install fonts-nanum fonts-nanum-coding fonts-nanum-extra -y
 
 
 # Setup SSH
