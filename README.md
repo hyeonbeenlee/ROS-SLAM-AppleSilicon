@@ -10,6 +10,7 @@ But after all, these <ins>***DID NOT***</ins> successfully run Gazebo and other 
 
 # Step 1: Install VMware Fusion and RDP client
 [Download Remote Desktop Client](https://apps.apple.com/kr/app/microsoft-remote-desktop/id1295203466?l=en-GB&mt=12)  
+
 [Download VMware Fusion Player](https://www.vmware.com/products/fusion/fusion-evaluation.html)  
 You may need to sign up and register to get the free personal-use license.
 
