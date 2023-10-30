@@ -37,7 +37,7 @@ cd ROS-SLAM-AppleSilicon
 ```
 
 # Step 5: Run automatic setup
-Running the ```setup.sh``` in the VM's Ubuntu terminal will do the following in sequence:
+Running the ```setup_<ROS_DISTRO>.sh``` in the VM's Ubuntu terminal will do the following in sequence:
 - Authorize the user
 -  Update the default apt mirrors to faster local(Korean) mirrors
 - Setup SSH and XRDP connections
@@ -45,15 +45,15 @@ Running the ```setup.sh``` in the VM's Ubuntu terminal will do the following in 
 - Install ROS and Turtlebot3-Gazebo simulation apps
 - Clean and reboot
 
-Before you run ```setup.sh```, there're <ins>few things to be personalized.</ins>  
+Before you run ```setup_<ROS_DISTRO>.sh```, there're <ins>few things to be personalized.</ins>  
 ```
-vi setup.sh
+vi setup_<ROS_DISTRO>.sh
 ```
 1. **Replace ```hyeonbeen``` to ```<YOUR_USERNAME>```.**
 2. **Replace the Korean apt mirror ```ftp.lanet.kr``` to others, if necessary.**
 3. **Replace the ```noetic``` to ```<YOUR_ROS_VERSION>``` if necessary.**
 
-Then, run the ```setup.sh```
+Then, run the ```setup_<ROS_DISTRO>.sh```
 ```
 . setup.sh
 ```
