@@ -102,17 +102,6 @@ cd ~/turtlebot3_ws/src/
 git clone -b humble-devel https://github.com/ROBOTIS-GIT/turtlebot3_simulations.git
 cd ~/turtlebot3_ws && colcon build --symlink-install
 echo "export TURTLEBOT3_MODEL=waffle_pi" >> ~/.bashrc
-# sudo apt-get install ros-noetic-joy ros-noetic-teleop-twist-joy ros-noetic-teleop-twist-keyboard ros-noetic-laser-proc ros-noetic-rgbd-launch ros-noetic-rosserial-arduino ros-noetic-rosserial-python ros-noetic-rosserial-client ros-noetic-rosserial-msgs ros-noetic-amcl ros-noetic-map-server ros-noetic-move-base ros-noetic-urdf ros-noetic-xacro ros-noetic-compressed-image-transport ros-noetic-rqt* ros-noetic-rviz ros-noetic-gmapping ros-noetic-navigation ros-noetic-interactive-markers -y
-# mkdir -p ~/catkin_ws/src
-# cd ~/catkin_ws/src/
-# git clone -b noetic-devel https://github.com/ROBOTIS-GIT/turtlebot3_simulations.git
-# git clone -b noetic-devel https://github.com/ROBOTIS-GIT/DynamixelSDK.git
-# git clone -b noetic-devel https://github.com/ROBOTIS-GIT/turtlebot3_msgs.git
-# git clone -b noetic-devel https://github.com/ROBOTIS-GIT/turtlebot3.git
-# cd ~/catkin_ws && catkin_make
-# echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc
-# source ~/.bashrc
-
 
 # Install miniconda
 # mkdir -p ~/miniconda3
