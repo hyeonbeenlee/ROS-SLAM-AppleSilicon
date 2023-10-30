@@ -70,6 +70,7 @@ sudo DEBIAN_FRONTEND=noninteractive apt install code -y
 
 # ROS-Humble installation
 sudo apt update && sudo apt install locales -y
+sudo apt install python3-colcon-common-extensions
 sudo locale-gen en_US en_US.UTF-8
 sudo update-locale LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8
 export LANG=en_US.UTF-8
