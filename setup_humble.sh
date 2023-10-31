@@ -70,7 +70,6 @@ sudo DEBIAN_FRONTEND=noninteractive apt install code -y
 
 # ROS-Humble installation
 sudo apt update && sudo apt install locales -y
-sudo apt install python3-pip -y
 sudo apt install python3-colcon-common-extensions
 sudo locale-gen en_US en_US.UTF-8
 sudo update-locale LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8
@@ -90,14 +89,9 @@ sudo apt install ros-humble-cartographer -y
 sudo apt install ros-humble-cartographer-ros -y
 sudo apt install ros-humble-navigation2 -y
 sudo apt install ros-humble-nav2-bringup -y
-mkdir -p ~/turtlebot3_ws/src
-cd ~/turtlebot3_ws/src/
-git clone -b humble-devel https://github.com/ROBOTIS-GIT/DynamixelSDK.git
-git clone -b humble-devel https://github.com/ROBOTIS-GIT/turtlebot3_msgs.git
-git clone -b humble-devel https://github.com/ROBOTIS-GIT/turtlebot3.git
-cd ~/turtlebot3_ws
-colcon build --symlink-install
-echo 'source ~/turtlebot3_ws/install/setup.bash' >> ~/.bashrc
+sudo apt install ros-humble-dynamixel-sdk -y
+sudo apt install ros-humble-turtlebot3-msgs -y
+sudo apt install ros-humble-turtlebot3 -y
 echo 'export ROS_DOMAIN_ID=30 #TURTLEBOT3' >> ~/.bashrc
 source ~/.bashrc
 cd ~/turtlebot3_ws/src/
